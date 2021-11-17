@@ -10,7 +10,6 @@ pipeline {
                 steps{
                     sh 'npm install'
                     sh 'npm run build'
-                    sh 'npm update'
                     sh 'npm audit fix'
                 }
             }

@@ -12,6 +12,15 @@ pipeline {
                   git 'https://github.com/SwathiNirangani7/parking_frontend.git'         
                 }
             }
+       stage('Build') {
+        agent{
+            docker{ image 'node:12-alpine' }
+        }
+           steps{
+              sh 'npm install'
+              sh 'npm run build'
+                }
+            }
       stage('Build Image') {
         agent any
          steps{

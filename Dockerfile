@@ -1,5 +1,5 @@
 ## FROM deepakaiden/apachetomcat
-FROM 7075/tomcat
+FROM 7075/dockertomcat
 LABEL name="swathi"
 LABEL description="Use dockertomcat image as base image for custom tomcat deployment"
 USER root

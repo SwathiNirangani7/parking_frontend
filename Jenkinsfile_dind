@@ -12,13 +12,6 @@ pipeline {
                   git 'https://github.com/SwathiNirangani7/parking_frontend.git'         
                 }
             }
-      stage('Build') {
-        agent any
-           steps{
-              sh 'npm install'
-              sh 'npm run build'
-                }
-            }
       stage('Build Image') {
         agent any
          steps{

@@ -1,6 +1,6 @@
 ## FROM deepakaiden/apachetomcat
 FROM 7075/dockertomcat
-LABEL name="Jenkins"
+LABEL name="7075"
 LABEL description="Use dockertomcat image as base image for custom tomcat deployment"
 USER root
 RUN mkdir /usr/local/tomcat/webapps/build/
